@@ -205,6 +205,21 @@ const HomePage = () => {
                     {error && <Typography color="error">{error}</Typography>}
                 </Box>
             </Modal>
+				{/* Footer Section */}
+            <Box
+                width="100%"
+                textAlign="center"
+                p={2}
+                position="absolute"
+                bottom={0}
+                bgcolor="#0d47a1"
+                color="white"
+            >
+                <Typography variant="body2" style={{fontFamily: 'Roboto'}}>
+                    © 2024 Sidra Akhtar <br />
+						  Built with Javascript, Next.js, React.js, Firebase, Material UI
+                </Typography>
+            </Box>
         </Box>
     );
 };
@@ -503,14 +518,14 @@ const InventoryPage = () => {
     );
 };
 
-
 const App = () => (
 	<Router>
 		 <Routes>
-			  <Route path="/" element={<HomePage />} />
-			  <Route path="/inventory" element={<InventoryPage />} />
+			  <Route path="/" element={<HomePage/>} />
+			  <Route path="/inventory" element={<InventoryPage/>} />
 		 </Routes>
 	</Router>
 );
 
 export default App;
+
